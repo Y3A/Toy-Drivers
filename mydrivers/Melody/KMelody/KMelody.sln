@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32630.192
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "KMelody", "KMelody.vcxproj", "{87CCD555-77EB-4AB5-8001-16EB6DA51F34}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MelodyClient", "..\MelodyClient\MelodyClient.vcxproj", "{08BC56F3-3A9B-4E54-A5E8-A0C9F86DE037}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|ARM64 = Debug|ARM64
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|ARM64 = Release|ARM64
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{87CCD555-77EB-4AB5-8001-16EB6DA51F34}.Debug|ARM64.ActiveCfg = Debug|ARM64
+		{87CCD555-77EB-4AB5-8001-16EB6DA51F34}.Debug|ARM64.Build.0 = Debug|ARM64
+		{87CCD555-77EB-4AB5-8001-16EB6DA51F34}.Debug|ARM64.Deploy.0 = Debug|ARM64
+		{87CCD555-77EB-4AB5-8001-16EB6DA51F34}.Debug|x64.ActiveCfg = Debug|x64
+		{87CCD555-77EB-4AB5-8001-16EB6DA51F34}.Debug|x64.Build.0 = Debug|x64
+		{87CCD555-77EB-4AB5-8001-16EB6DA51F34}.Debug|x64.Deploy.0 = Debug|x64
+		{87CCD555-77EB-4AB5-8001-16EB6DA51F34}.Debug|x86.ActiveCfg = Debug|x64
+		{87CCD555-77EB-4AB5-8001-16EB6DA51F34}.Debug|x86.Build.0 = Debug|x64
+		{87CCD555-77EB-4AB5-8001-16EB6DA51F34}.Debug|x86.Deploy.0 = Debug|x64
+		{87CCD555-77EB-4AB5-8001-16EB6DA51F34}.Release|ARM64.ActiveCfg = Release|ARM64
+		{87CCD555-77EB-4AB5-8001-16EB6DA51F34}.Release|ARM64.Build.0 = Release|ARM64
+		{87CCD555-77EB-4AB5-8001-16EB6DA51F34}.Release|ARM64.Deploy.0 = Release|ARM64
+		{87CCD555-77EB-4AB5-8001-16EB6DA51F34}.Release|x64.ActiveCfg = Release|x64
+		{87CCD555-77EB-4AB5-8001-16EB6DA51F34}.Release|x64.Build.0 = Release|x64
+		{87CCD555-77EB-4AB5-8001-16EB6DA51F34}.Release|x64.Deploy.0 = Release|x64
+		{87CCD555-77EB-4AB5-8001-16EB6DA51F34}.Release|x86.ActiveCfg = Release|x64
+		{87CCD555-77EB-4AB5-8001-16EB6DA51F34}.Release|x86.Build.0 = Release|x64
+		{87CCD555-77EB-4AB5-8001-16EB6DA51F34}.Release|x86.Deploy.0 = Release|x64
+		{08BC56F3-3A9B-4E54-A5E8-A0C9F86DE037}.Debug|ARM64.ActiveCfg = Debug|x64
+		{08BC56F3-3A9B-4E54-A5E8-A0C9F86DE037}.Debug|ARM64.Build.0 = Debug|x64
+		{08BC56F3-3A9B-4E54-A5E8-A0C9F86DE037}.Debug|x64.ActiveCfg = Debug|x64
+		{08BC56F3-3A9B-4E54-A5E8-A0C9F86DE037}.Debug|x64.Build.0 = Debug|x64
+		{08BC56F3-3A9B-4E54-A5E8-A0C9F86DE037}.Debug|x86.ActiveCfg = Debug|Win32
+		{08BC56F3-3A9B-4E54-A5E8-A0C9F86DE037}.Debug|x86.Build.0 = Debug|Win32
+		{08BC56F3-3A9B-4E54-A5E8-A0C9F86DE037}.Release|ARM64.ActiveCfg = Release|x64
+		{08BC56F3-3A9B-4E54-A5E8-A0C9F86DE037}.Release|ARM64.Build.0 = Release|x64
+		{08BC56F3-3A9B-4E54-A5E8-A0C9F86DE037}.Release|x64.ActiveCfg = Release|x64
+		{08BC56F3-3A9B-4E54-A5E8-A0C9F86DE037}.Release|x64.Build.0 = Release|x64
+		{08BC56F3-3A9B-4E54-A5E8-A0C9F86DE037}.Release|x86.ActiveCfg = Release|Win32
+		{08BC56F3-3A9B-4E54-A5E8-A0C9F86DE037}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {38095476-3FF7-497A-A148-9F443325F652}
+	EndGlobalSection
+EndGlobal

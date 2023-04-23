@@ -1,0 +1,1 @@
+C:\Users\chenl\Desktop\hacking\win-kernel\mydrivers\KMelody\x64\Debug\KMelody.sys
