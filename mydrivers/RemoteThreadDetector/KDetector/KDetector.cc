@@ -139,6 +139,7 @@ static void OnCreateThreadNotify(HANDLE ProcessId, HANDLE ThreadId, BOOLEAN Crea
     auto entry = g_Processes.FindProcess(ProcessId);
     if (entry) {
         // fake remote
+        KdPrint(("Fake remote pid %d\n", HandleToUlong(ProcessId)));
         g_Processes.RemoveProcess(entry);
         return;
     }
@@ -153,6 +154,7 @@ static void OnCreateThreadNotify(HANDLE ProcessId, HANDLE ThreadId, BOOLEAN Crea
     info->information.size = sizeof(RemoteThreadInfo);
 
     g_ThreadInfo.AddInfo(&info->link);
+    KdPrint(("Remote thread added!\n"));
 
     return;
 }
@@ -272,6 +274,12 @@ LIST_ENTRY *ProcessesHead::FindProcess(HANDLE pid)
 {
     LIST_ENTRY *ret = nullptr;
 
+    /*
+     * We technically have a race bug here by returning a pointer from a shared search
+     *   in the case where the process list gets huge enough so search is slow, and one process quickly
+     *   created a thread and exits before the thread callback is serviced.
+     * It will trigger both processnotify and threadnotify to free an entry, resulting in double free.
+     */
     SharedLocker<ExecutiveResource> locker(m_lock);
 
     for (auto cur = m_head.Flink; cur != &m_head; cur = cur->Flink) {
