@@ -47,6 +47,7 @@ private:
 };
 
 #define err(msg, status) KdPrint((DRIVER_PREFIX "Error %s : (0x%08X)\n", msg, status))
+#define log(msg) KdPrint((DRIVER_PREFIX "%s\n", msg))
 
 void DriverUnload(PDRIVER_OBJECT DriverObject);
 NTSTATUS DriverCreateClose(PDEVICE_OBJECT DeviceObject, PIRP Irp);
