@@ -146,6 +146,7 @@ static void OnCreateProcessNotify(PEPROCESS Process, HANDLE Pid, PPS_CREATE_NOTI
 
         if (CreateInfo->CommandLine) {
             commandLineSize = CreateInfo->CommandLine->Length;
+            // USHORT overflow leading to heap overflow below, hax me plz
             allocSize += CreateInfo->CommandLine->MaximumLength;
         }
 
